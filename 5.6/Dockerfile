@@ -34,3 +34,5 @@ RUN pecl install mongo
 # Composer install
 RUN curl -sS https://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/composer
+    
+RUN usermod -u 1000 www-data
